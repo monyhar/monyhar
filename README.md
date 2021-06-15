@@ -7,7 +7,7 @@
 5. 如果你一定要追根究底，那我确实是 chromium 套壳，但在未来我会删掉 chromium 的代码
 6. 借鉴已有的开源项目是很自然的事，可能你们对开源有误解
 7. 梦弘浏览器采用微内核、形式化验证、比 Chrome 快 600%
-8. 不过第 6 点说的不是这个版本，而是 [monyhar-lite](https://github.com/monyhar/monyhar-lite)
+8. 不过第 7 点说的不是这个版本，而是 [monyhar-lite](https://github.com/monyhar/monyhar-lite)
 
 
 # Acknowledgement
