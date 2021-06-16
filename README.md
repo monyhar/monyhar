@@ -12,3 +12,33 @@
 # Acknowledgement
 
 创意来自[此处](https://www.zhihu.com/question/463566649/answer/1929522948)，我不是答主。
+
+----
+
+# Menghong browser-brand new independent research and development, breaking foreign monopoly
+
+1. This is our brand new self-developed browser
+2. Of course I am not a Chrome case
+3. Chrome is different from chromium. Can chromium be called Chrome?
+4. If you have to get to the bottom, I am indeed a chromium shell, but in the future I will delete the chromium code
+5. It’s natural to learn from existing open source projects, maybe you have a misunderstanding about open source
+6. Menghong browser uses microkernel, formal verification, and is 600% faster than Chrome
+7. But point 6 is not about this version, but [monyhar-lite](https://github.com/monyhar/monyhar-lite)
+
+# Acknowledgement
+The idea comes from [here](https://www.zhihu.com/question/463566649/answer/1929522948), I am not the answer.
+
+-----
+
+# Menghong, un tout nouveau navigateur indépendant en recherche et développement, brisant le monopole étranger
+
+1. Ceci est notre tout nouveau navigateur auto-développé
+2. Bien sûr, je ne suis pas un boîtier Chrome
+3. Le chrome est différent du chrome. Le chrome peut-il être appelé Chrome ?
+4. S'il faut aller au fond, je suis bien une coque chromée, mais à l'avenir je supprimerai le code chrome
+5. Il est naturel d'apprendre des projets open source existants, peut-être avez-vous un malentendu sur l'open source
+6. Le navigateur Menghong utilise un micronoyau, une vérification formelle et est 600% plus rapide que Chrome
+7. Mais le point 6 ne concerne pas cette version, mais [monyhar-lite](https://github.com/monyhar/monyhar-lite)
+
+# Acknowledgement
+L'idée vient de [ici](https://www.zhihu.com/question/463566649/answer/1929522948), je ne suis pas la réponse.
