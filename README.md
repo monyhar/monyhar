@@ -7,8 +7,8 @@
 5. 借鉴已有的开源项目是很自然的事，可能你们对开源有误解
 6. 梦弘浏览器采用微内核、形式化验证、比 Chrome 快 600%
 7. 不过第 6 点说的不是这个版本，而是 [monyhar-lite](https://github.com/monyhar/monyhar-lite)
-
-
+注:这个软件只是一个玩笑，请勿当真！
+PS:虽然是个玩笑，但其实完全可以正常使用
 # Acknowledgement
 
 创意来自[此处](https://www.zhihu.com/question/463566649/answer/1929522948)，我不是答主。
